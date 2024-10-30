@@ -2,7 +2,7 @@
 
 Welcome to the **Data Preparation, EDA, and Visualization** GitHub repository! This repository showcases the complete end-to-end workflow for preparing, exploring, visualizing, and building machine learning models on a structured dataset. 
 
-**GitHub Repository Link:** [Data Preparation, EDA, and Visualization](https://github.com/Praful-John2409/Data_preparation_EDA_Visualisation.git)
+**Link to Colab** [Data Preparation, EDA, and Visualization on Tabular dataset](https://colab.research.google.com/drive/1hfH0KqFEfvvr0B-Kf0bCKfPoYiFs10pp?usp=sharing)
 
 ---
 
