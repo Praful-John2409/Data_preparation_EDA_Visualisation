@@ -3,22 +3,7 @@
 Welcome to the **Data Preparation, EDA, and Visualization** GitHub repository! This repository showcases the complete end-to-end workflow for preparing, exploring, visualizing, and building machine learning models on a structured dataset. 
 
 **Link to Colab** [Data Preparation, EDA, and Visualization on Tabular dataset](https://colab.research.google.com/drive/1hfH0KqFEfvvr0B-Kf0bCKfPoYiFs10pp?usp=sharing)
-
----
-
-## **Repository Structure**
-
-```
-📂 Data_preparation_EDA_Visualisation
-│
-├── 📁 data/                    # Contains datasets used in the project
-│   └── final_preprocessed_genres.csv  
-│
-├── 📁 notebooks/               # Contains Colab notebooks for the entire workflow
-│   └── AutoML_Workflow.ipynb   # Full Colab notebook with AutoML implementation
-│
-└── README.md                   # You're here!
-```
+[Data Preparation, EDA, and Visualization on Tabular dataset](https://colab.research.google.com/drive/1BGfiqksR1bK7_NymYLBMHPkzeSn02EaR?usp=sharing)
 
 ---
 
@@ -94,8 +79,8 @@ Make sure you have the required libraries installed. Run the following commands 
 
 ## **How to Use the Notebook**
 
-1. **Open the Colab notebook** located in the `notebooks/` folder.
-2. **Upload the dataset** found in the `data/` folder into your Colab environment.
+1. **Open the Colab notebook** located in the `colabs/` folder.
+2. **Upload the dataset** found in the `datasets/` folder into your Colab environment.
 3. **Follow the steps** inside the notebook to:
    - Perform **EDA and visualizations**.
    - Train and evaluate **AutoML models** using AutoVIML.
