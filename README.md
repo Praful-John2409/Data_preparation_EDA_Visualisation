@@ -1,59 +1,71 @@
 # **Data Preparation, EDA, and Visualization Repository**
 
-Welcome to the **Data Preparation, EDA, and Visualization** GitHub repository! This repository showcases the complete end-to-end workflow for preparing, exploring, visualizing, and building machine learning models on a structured dataset. 
+Welcome to the **Data Preparation, EDA, and Visualization** GitHub repository! This repository showcases a comprehensive end-to-end workflow for preparing, exploring, visualizing, and building machine learning models on two distinct types of datasets: a **tabular dataset of musical track features and genres** and a **time series dataset focused on retail sales data**.
 
-**Link to Colab** [Data Preparation, EDA, and Visualization on Tabular dataset](https://colab.research.google.com/drive/1hfH0KqFEfvvr0B-Kf0bCKfPoYiFs10pp?usp=sharing)
-[Data Preparation, EDA, and Visualization on Time Series dataset](https://colab.research.google.com/drive/1BGfiqksR1bK7_NymYLBMHPkzeSn02EaR?usp=sharing)
+## **Colab Notebooks**
+
+1. **[Data Preparation, EDA, and Visualization on Tabular Dataset](https://colab.research.google.com/drive/1hfH0KqFEfvvr0B-Kf0bCKfPoYiFs10pp?usp=sharing)**
+2. **[Data Preparation, EDA, and Visualization on Time Series Dataset](https://colab.research.google.com/drive/1BGfiqksR1bK7_NymYLBMHPkzeSn02EaR?usp=sharing)**
 
 ---
 
-## **Dataset Overview**
+## **Dataset Overviews**
 
-The dataset used in this project focuses on **musical track features** and **genres**, providing numerical and categorical attributes. Below is a summary of the dataset:
+### **1. Tabular Dataset: Musical Track Features and Genres**
 
-- **Attributes:**  
-  - **Danceability:** A float value describing how suitable the track is for dancing.
-  - **Energy:** A measure of intensity and activity within the song.
-  - **Loudness:** The overall loudness of the track in decibels.
-  - **Speechiness:** The presence of spoken words in the track.
-  - **Acousticness:** Likelihood that the track is acoustic.
-  - **Instrumentalness:** Describes how much of the track is purely instrumental.
-  - **Tempo:** Beats per minute (BPM) of the track.
-  - **Valence:** A measure of musical positivity or happiness.
+The first dataset includes various numerical and categorical attributes that describe the characteristics of musical tracks and their genres. This dataset is perfect for genre classification and analyzing musical patterns.
+
+- **Attributes:**
+  - **Danceability, Energy, Loudness, Speechiness, Acousticness, Instrumentalness, Tempo, Valence**
   - **Genres:** Categorical labels representing the type of music (e.g., Trap, EDM, Hardstyle).
-
 - **Dataset Size:**  
   - **Rows:** 42,305
   - **Columns:** 28 (after preprocessing)
-  
-This dataset allows for deep exploration of **musical patterns, genre classification, and data preparation workflows** using various AutoML models.
+
+### **2. Time Series Dataset: Retail Sales Data**
+
+The second dataset comprises time series data related to retail sales, enriched with additional features like holidays, oil prices, and transactions. This dataset enables exploration of sales patterns, holiday effects, and other influencing factors.
+
+- **Attributes:**
+  - **Date, Store Number, Sales, Family (Product Categories), On Promotion**
+  - **Supplementary Data:** Oil prices, holiday events, transactions at stores, and store details.
+- **Dataset Size:**  
+  - **Multiple CSV Files** containing varying numbers of rows and columns, with data for thousands of transactions over multiple years.
 
 ---
 
-## **Colab Notebook Overview**
+## **Colab Notebook Overviews**
 
-The Colab notebook demonstrates an **end-to-end workflow** for preparing the dataset, performing **exploratory data analysis (EDA)**, and building **machine learning models** using **AutoML techniques**. 
-
-### **Steps Covered in the Colab:**
+### **Tabular Data Workflow:**
 
 1. **Data Loading and Preprocessing:**
-   - Loaded the **final preprocessed dataset**.
-   - Ensured **feature scaling** using **StandardScaler**.
-   - Removed **outliers** and ensured high-quality data for model building.
+   - Cleaned and scaled the dataset using `StandardScaler`.
+   - Removed outliers to ensure data quality for model building.
+  
+2. **Exploratory Data Analysis (EDA):**
+   - Analyzed the distributions of numerical features like danceability and energy.
+   - Created a correlation heatmap to understand feature relationships.
+   - Visualized the most frequent genres using bar plots.
 
-2. **Exploratory Data Analysis (EDA) and Visualization:**
-   - Conducted **distribution analysis** on numerical features (e.g., danceability, energy).
-   - Created a **correlation heatmap** to identify feature relationships.
-   - Visualized **top genres** with bar plots to understand data distribution.
+3. **Model Building with AutoVIML:**
+   - Automated feature selection and hyperparameter tuning.
+   - Trained multiple models and selected the best-performing ensemble model.
+   - Achieved an impressive accuracy score of **99%** on the test set.
 
-3. **AutoML Model Building with AutoVIML:**
-   - **Feature selection and hyperparameter tuning** were automated using **AutoVIML**.
-   - Built multiple models and selected the **best-performing ensemble model**.
-   - Achieved an outstanding **accuracy score of 99%** on the test set.
+### **Time Series Data Workflow:**
 
-4. **Model Evaluation:**
-   - Evaluated the model’s performance using **accuracy metrics**.
-   - Addressed potential **feature mismatches** to ensure smooth predictions on the test set.
+1. **Data Loading and Integration:**
+   - Merged data from different CSV files (e.g., oil prices, holidays, transactions).
+   - Addressed missing values and performed initial data quality checks.
+
+2. **Exploratory Data Analysis:**
+   - Visualized time series trends, seasonal patterns, and anomalies.
+   - Examined sales fluctuations around holidays and the impact of oil prices.
+   - Explored store-wise sales trends and analyzed high-transaction periods.
+
+3. **Time Series Forecasting:**
+   - Applied preprocessing techniques to prepare the data for forecasting.
+   - Developed and evaluated models to predict future sales based on historical data.
 
 ---
 
@@ -61,15 +73,13 @@ The Colab notebook demonstrates an **end-to-end workflow** for preparing the dat
 
 ### **Clone the Repository:**
 
-To get started with the code and data, **clone the repository** using the following command:
-
 ```bash
 git clone https://github.com/Praful-John2409/Data_preparation_EDA_Visualisation.git
 ```
 
 ### **Environment Setup:**
 
-Make sure you have the required libraries installed. Run the following commands in your Colab environment:
+Make sure you have the required libraries installed. Use the following command in your Colab environment:
 
 ```bash
 !pip install autoviml numpy==1.22.4 scipy==1.9.3 matplotlib==3.5.3
@@ -77,13 +87,11 @@ Make sure you have the required libraries installed. Run the following commands 
 
 ---
 
-## **How to Use the Notebook**
+## **How to Use the Notebooks**
 
-1. **Open the Colab notebook** located in the `colabs/` folder.
-2. **Upload the dataset** found in the `datasets/` folder into your Colab environment.
-3. **Follow the steps** inside the notebook to:
-   - Perform **EDA and visualizations**.
-   - Train and evaluate **AutoML models** using AutoVIML.
-4. Modify the notebook as needed to **extend the workflow** for future tasks.
+1. **Open the Colab notebook** for the desired dataset in the `colabs/` folder.
+2. **Upload the respective dataset** from the `datasets/` folder into your Colab environment.
+3. **Follow the step-by-step instructions** to explore the data, perform visualizations, and build models.
+4. Feel free to modify and extend the notebooks for your own analyses.
 
 ---
