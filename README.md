@@ -8,6 +8,9 @@ Welcome to the **Data Preparation, EDA, and Visualization** GitHub repository! T
 2. **[Data Preparation, EDA, and Visualization on Time Series Dataset](https://colab.research.google.com/drive/1BGfiqksR1bK7_NymYLBMHPkzeSn02EaR?usp=sharing)**
 
 ---
+## Youtube video 
+click [here](https://youtube.com/playlist?list=PLkZIndjUMqFWnrI-rfNxrHactjoZ0oNL9&si=G13sD6-n1vMCBvry) for the youtube playlist that covers the exaplanation of the Colabs 
+---
 
 ## **Dataset Overviews**
 
